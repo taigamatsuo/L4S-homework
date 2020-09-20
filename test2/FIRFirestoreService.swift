@@ -4,7 +4,7 @@
 //
 //  Created by 松尾大雅 on 2020/09/20.
 //  Copyright © 2020 litech. All rights reserved.
-//
+// 　完成！
 
 import Foundation
 import Firebase
@@ -60,7 +60,7 @@ class FIRFirestoreService {
         
         do{
             let json = try encodableObject.toJson(excluding: ["id"])
-            guard let id = encodableObject.id else {throw MyError.encodingError}
+            guard let id = encodableObject.id else { throw MyError.encodingError}
             reference(to: collectionReference).document(id).setData(json)
             
         }  catch{
