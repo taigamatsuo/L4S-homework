@@ -8,7 +8,7 @@
 //1:28
 import Foundation
 
-protocol Identifireble {
+protocol Identifiable {
     var id : String? { get set } 
 }
 
